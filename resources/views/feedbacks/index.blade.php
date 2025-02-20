@@ -4,6 +4,7 @@
 
 @section('content')
     <h2 class="text-2xl">Просмотр отзывов</h2>
+@if (count($data) > 0)
     @foreach($data as $value)
     <div class="mt-20 mobile:w-1/2 max-mobile:w-full p-12 border-[1px] border-wp_border flex">
             <div class="min-w-24">
@@ -32,6 +33,9 @@
             </div>
     </div>
     @endforeach
+    @else
+	    <p class="text-center">Отзывов нет</p>
+@endif
     
 <div class="flex justify-center items-center mt-10">
 {{$data->links()}}
