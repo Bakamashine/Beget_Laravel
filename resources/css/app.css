@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Great_Vibes';
+        /* src: url("/public/fonts/Great_Vibes/GreatVibes_Regular.ttf") format('ttf'); */
+        src: url("/fonts/Great_Vibes/GreatVibes-Regular.ttf") format("ttf");
+        /* font-weight: normal;
+        font-stretch: normal; */
+    }
+}

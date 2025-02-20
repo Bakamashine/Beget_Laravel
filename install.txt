@@ -1,0 +1,13 @@
+# laravel-ide-helper
+php artisan ide-helper:generate
+php artisan ide-helper:models -RW
+
+# Telescope
+php artisan telescope:install
+php artisan migrate
+
+# Fortify
+php artisan fortify:install
+
+# Админ
+User::create(["name" => "admin1", "role_id" => "1",  "surname" => "admin1", "patronymic" => "admin1", "email" => "admin@admin.ru", "password" => Hash::make("admin")]);
